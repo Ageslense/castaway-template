@@ -288,7 +288,7 @@
     $(document).ready(function(){
       $('.categories-slider').slick({
         infinite: true,
-        autoplay: true,
+        autoplay: false,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -318,8 +318,8 @@
       $(".categories-box").on("mouseover", function(event) {
         event.target.querySelector('video').play()
       }).on('mouseout', function(event) {
-        event.target.querySelector('video').pause()        
-
+        event.target.querySelector('video').pause()    
+        event.target.querySelector('video').currentTime = 0       
       });
     })
   </script>
