@@ -87,6 +87,22 @@ a:hover, a:focus{
   max-width: 1800px;
 }
 
+.menu li{
+  transition: 0.2s all ease-in-out;
+
+  &:before{
+    content : "";
+      position: absolute;
+      left    : 25%;
+      bottom  : 0;
+      height  : 1px;
+      width   : 50%;  
+      border-bottom:3px solid transparent;
+
+      transition: all 0.2s ease-in-out;
+  }
+}
+
 
 //Navbar
   .top-bar {
@@ -132,6 +148,8 @@ a:hover, a:focus{
           height  : 1px;
           width   : 50%;  
           border-bottom:3px solid $primary-color;
+
+          transition: all 0.2s ease-in-out;
         }
       }
     }
@@ -216,6 +234,7 @@ a:hover, a:focus{
 
   &-menu{
     width: 100%;
+    font-family: rubic;
   }
 
   .menu li{
@@ -226,13 +245,7 @@ a:hover, a:focus{
     }
 
     &:hover:before {
-      content : "";
-      position: absolute;
-      left    : 25%;
-      bottom  : 0;
-      height  : 1px;
-      width   : 50%;  
-      border-bottom:3px solid $primary-color;
+      border-color: $primary-color;
     }
   }
 

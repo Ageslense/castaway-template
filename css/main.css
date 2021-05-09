@@ -77,6 +77,23 @@ a:hover, a:focus {
   max-width: 1800px;
 }
 
+.menu li {
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.menu li:before {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  height: 1px;
+  width: 50%;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
 .top-bar {
   position: absolute;
   width: 100%;
@@ -133,6 +150,8 @@ a:hover, a:focus {
   height: 1px;
   width: 50%;
   border-bottom: 3px solid #d9a534;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .top-bar .menu {
@@ -228,6 +247,7 @@ a:hover, a:focus {
 
 .footer-menu {
   width: 100%;
+  font-family: rubic;
 }
 
 .footer .menu li {
@@ -239,13 +259,7 @@ a:hover, a:focus {
 }
 
 .footer .menu li:hover:before {
-  content: "";
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  height: 1px;
-  width: 50%;
-  border-bottom: 3px solid #d9a534;
+  border-color: #d9a534;
 }
 
 @media screen and (min-width: 768px) {
