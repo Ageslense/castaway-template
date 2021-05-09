@@ -218,8 +218,18 @@ $overlay-text-color: white;
         width: 25%;
         max-width: 300px;
      }
-   
 
+     .categories-slider{
+      position: relative;
+   
+      .slick-prev:before{
+         left: -4vw;
+      }
+   
+      .slick-next:before{
+         right: -4vw;
+      }
+   }
  }
 
  @media screen and (min-width: 1280px){

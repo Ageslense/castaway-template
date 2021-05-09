@@ -258,6 +258,15 @@
     width: 25%;
     max-width: 300px;
   }
+  .categories-slider {
+    position: relative;
+  }
+  .categories-slider .slick-prev:before {
+    left: -4vw;
+  }
+  .categories-slider .slick-next:before {
+    right: -4vw;
+  }
 }
 
 @media screen and (min-width: 1280px) {
