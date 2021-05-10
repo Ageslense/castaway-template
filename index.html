@@ -319,7 +319,7 @@
         event.target.querySelector('video').play()
       })      
 
-      $(".categories-box").on('mouseleave', function(event) {
+      $(".categories-box").on('mouseout', function(event) {
         event.target.querySelector('video').pause()    
         event.target.querySelector('video').currentTime = 0       
       });
