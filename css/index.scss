@@ -151,6 +151,10 @@ $overlay-text-color: white;
    pointer-events: none;
 }
 
+.slick-prev{
+   z-index: 9;
+}
+
 //About text
 .about-info-wrapper{
    padding-top: 40px;
@@ -229,6 +233,8 @@ $overlay-text-color: white;
       .slick-next:before{
          right: -4vw;
       }
+
+      
    }
  }
 

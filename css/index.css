@@ -167,6 +167,10 @@
   pointer-events: none;
 }
 
+.slick-prev {
+  z-index: 9;
+}
+
 .about-info-wrapper {
   padding-top: 40px;
 }
