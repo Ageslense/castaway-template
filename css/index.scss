@@ -170,8 +170,6 @@ $overlay-text-color: white;
    margin-bottom: 1rem;
 }
 
-
-
 // Animations
 .slide-down {
    animation-duration: 2s;
@@ -221,6 +219,7 @@ $overlay-text-color: white;
      .about-img{
         width: 25%;
         max-width: 300px;
+        margin-bottom: auto;
      }
 
      .categories-slider{
