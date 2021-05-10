@@ -324,6 +324,18 @@ a:hover, a:focus {
     width: 20px;
     height: 20px;
   }
+  #responsive-menu.show-navbar {
+    position: fixed;
+    top: -600px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+  }
+  #responsive-menu.show-navbar-done {
+    top: 0;
+  }
   .hero-header-secondary {
     letter-spacing: 10px;
   }

@@ -322,6 +322,20 @@ a:hover, a:focus{
 
    }
 
+   #responsive-menu.show-navbar{
+     position: fixed;
+     top: -600px;
+     z-index: 1000;
+     background: $overlay-bg;
+     transition: all 0.2s ease-in-out;
+
+     width: 100%;
+   }
+
+   #responsive-menu.show-navbar-done{
+     top: 0;
+   }
+
    //slider
    .hero-header-secondary{
     letter-spacing: 10px;
