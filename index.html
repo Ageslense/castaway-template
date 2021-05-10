@@ -317,7 +317,9 @@
 
       $(".categories-box").on("mouseover", function(event) {
         event.target.querySelector('video').play()
-      }).on('mouseleave', function(event) {
+      })      
+
+      $(".categories-box").on('mouseleave', function(event) {
         event.target.querySelector('video').pause()    
         event.target.querySelector('video').currentTime = 0       
       });
